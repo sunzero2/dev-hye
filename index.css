@@ -3,7 +3,9 @@ div,
 p,
 header,
 section,
-footer {
+footer,
+nav,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -74,10 +76,12 @@ hr {
 /* header */
 header {
     position: fixed;
-    color: #272822;
     height: 8vh;
     width: 100%;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background: #272822;
+    color: #ececec;
 }
 
 .head-title {
@@ -99,6 +103,33 @@ header {
 
 }
 
+/* landing */
+#landing {
+    height: 100vh;
+    background: #272822;
+    color: #ececec;
+}
+
+#text-box {
+    padding-top: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.landing-text {
+    font-family: 'InfinitySans-BoldA1';
+    font-size: xxx-large;
+    width: max-content;
+    animation-name: typing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from {border-right: none;}
+    to {border-right: 3px solid #ececec;}
+}
 /* content */
 .content {
     padding-top: 8vh;
@@ -140,7 +171,12 @@ header {
     font-family: 'DWImpactamin';
     font-size: xx-large;
     margin-left: 5vw;
-    margin-top: 9vh;
+    margin-top: 12vh;
+}
+
+.contact {
+    line-height: 4vh;
+    margin-top: 3vh;
 }
 
 .about-me-cont {
@@ -148,8 +184,27 @@ header {
     font-size: large;
 }
 
+.contact-image, .contact-link {
+    display: inline-block;
+}
 
+.contact-link {
+    margin-left: 2vw;
+}
 
+.contact-common {
+    font-family: 'InfinitySans-BoldA1';
+    width: max-content;
+    font-size: medium;
+}
+
+.github-image {
+    margin-left: 16vw;
+}
+
+.blog-image {
+    margin-left: 16.5vw;
+}
 
 /* footer */
 footer {

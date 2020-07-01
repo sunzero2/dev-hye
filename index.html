@@ -1,8 +1,50 @@
 <html>
     <head>
-        <meta charset="utf-8">  
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>hello world!</h1>
+
+        <header id="header">
+            <p class="head-title">Developer Hye</p>
+        </header>
+
+        <section id="navi">
+            <ul>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">PORTPOLIO</a></li>
+            </ul>
+        </section>
+
+
+        <section class="content">
+            <div id="profile">
+                <div class="title-wrap">
+                    <hr>
+                    <p class="profile-title">PROFILE</p>
+                </div>
+                <div class="info">
+                    <div class="image-box">
+                        <img class="title-image" src="title_image.jpg">
+                    </div>
+                    <ul style="float: right;">
+                        <li>
+                            <p class="about-me">"코딩과 블로그가 취미인 신입 개발자입니다."</p>
+                        </li>
+                        <li>
+                            <p class="about-me-cont" style="margin-top: 2vh;">공부한 것을 블로그에 정리하는 걸 좋아합니다.</p>
+                            <p class="about-me-cont">누구나, 언제든지 볼 수 있기에 더 깊게 공부하여 명확한 정보를 전달하려 노력합니다.</p>
+                            <p class="about-me-cont">서버 개발에 흥미를 느껴 알고리즘, 자료구조 등 효율적인 구조를 짜는 법에 대해 공부하고 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="skill"></div>
+            <div id="portpolio"></div>
+        </section>
+
+        <footer></footer>
+        <script src="index.js"></script>
     </body>
 </html>

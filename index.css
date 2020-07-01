@@ -1,0 +1,157 @@
+body,
+div,
+p,
+header,
+section,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #272822;
+}
+
+a:hover {
+    color: #a4da72;
+}
+
+hr {
+    width: 3vw;
+    border: 0;
+    border-top: 3px solid;
+    border-color: #272822;
+    float: left;
+    margin-top: 1.5vh;
+}
+
+/* font */
+@font-face {
+    font-family: 'InfinitySans-BoldA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DWImpactamin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/DWImpactamin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BBTreeGL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header */
+header {
+    position: fixed;
+    color: #272822;
+    height: 8vh;
+    width: 100vw;
+    transition-duration: 0.5s;
+}
+
+.head-title {
+    font-size: x-large;
+    font-family: 'InfinitySans-BoldA1';
+    border-right: 1px solid #ececec;
+    margin-left: 1vw;
+    line-height: 7.5vh;
+}
+
+/* navi */
+#navi {
+    font-family: 'NeoDunggeunmo';
+    position: fixed;
+    margin-left: 90vw;
+    margin-top: 48vh;
+    line-height: 30px;
+    color: #272822;
+
+}
+
+/* content */
+.content {
+    padding-top: 8vh;
+}
+
+.title-wrap {
+    margin-top: 12vh;
+    margin-left: 10vh;
+}
+
+/* profile */
+.profile-title {
+    font-family: 'InfinitySans-BoldA1';
+    margin-left: 4vw;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #272822;
+}
+
+.info {
+    display: inline-block;
+}
+
+.image-box {
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 12vw;
+    display: inline-block;
+}
+
+.title-image {
+    width: 28vw;
+    margin-left: -7vw;
+}
+
+.about-me {
+    font-family: 'DWImpactamin';
+    font-size: xx-large;
+    margin-left: 5vw;
+    margin-top: 9vh;
+}
+
+.about-me-cont {
+    font-family: 'BBTreeGL';
+    font-size: large;
+}
+
+
+
+
+/* footer */
+footer {
+    height: 100vh;
+}

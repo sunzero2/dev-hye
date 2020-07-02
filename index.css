@@ -170,7 +170,7 @@ header {
 .about-me {
     font-family: 'DWImpactamin';
     font-size: xx-large;
-    margin-left: 5vw;
+    margin-left: 4vw;
     margin-top: 12vh;
 }
 
@@ -204,6 +204,54 @@ header {
 
 .blog-image {
     margin-left: 16.5vw;
+}
+
+.email-image {
+    margin-left: 16.2vw;
+}
+
+/* skill */
+.skill-content {
+    width: 72vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15vw;
+}
+
+.skill-wrap {
+    border: 1px solid #656565;
+    border-radius: 50%;
+    width: 11vw;
+    height: 19vh;
+    margin-top: 6vh;
+    margin-left: 2vw;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.skill-title {
+    color: #272822;
+    font-family: 'DWImpactamin';
+    font-size: larger;
+    text-align: center;
+    padding-top: 8.5vh;
+}
+
+.secret-div {
+    width: 11vw;
+    height: 19vh;
+    display: inline-block;
+    background: #b5ef7f;
+    transform: translateY(10vh);
+    transition-duration: 1s;
+    opacity: 0.5;
+}
+
+/* portpolio */
+.portpolio-content {
+    width: 72vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* footer */

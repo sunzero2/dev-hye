@@ -34,3 +34,40 @@ window.onscroll = function() {
         header.style.opacity = 0;
     }
 }
+
+let skill_per = 0;
+document.querySelectorAll('.skill-wrap').forEach(function(el) {
+    el.addEventListener('mouseover', function() {
+        switch(el.children[0].textContent) {
+            case 'JavaScript':
+                skill_per = -6;
+                break;
+            case 'Java':
+                skill_per = -8;
+                break;
+            case 'Spring':
+                skill_per = -6;
+                break;
+            case 'Mybatis':
+                skill_per = -7;
+                break;
+            case 'HTML/CSS':
+                skill_per = -4;
+                break;
+            case 'GitHub':
+                skill_per = -6;
+                break;
+            case 'Oracle/MySQL':
+                skill_per = -5;
+                break;
+            case 'AWS':
+                skill_per = -5;
+                break;
+        }
+        el.children[1].style.transform = 'translateY(' + skill_per + 'vh)';
+    });
+
+    el.addEventListener('mouseout', function() {
+        el.children[1].style.transform = 'translateY(10vh)';
+    })
+})

@@ -73,3 +73,13 @@ document.querySelectorAll('.skill-wrap').forEach(function(el) {
         el.style.boxShadow = 'none';
     })
 })
+
+document.querySelectorAll('.project-wrap').forEach(function(el) {
+    el.addEventListener('mouseover', function() {
+        el.children[0].children[0].style.opacity = 1;
+    })
+
+    el.addEventListener('mouseout', function() {
+        el.children[0].children[0].style.opacity = 0;
+    })
+})

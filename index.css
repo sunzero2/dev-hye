@@ -227,6 +227,7 @@ header {
     margin-left: 2vw;
     display: inline-block;
     overflow: hidden;
+    transition-duration: 1s;
 }
 
 .skill-title {

@@ -65,9 +65,11 @@ document.querySelectorAll('.skill-wrap').forEach(function(el) {
                 break;
         }
         el.children[1].style.transform = 'translateY(' + skill_per + 'vh)';
+        el.style.boxShadow = '0px 0px 8px 0px #656565';
     });
 
     el.addEventListener('mouseout', function() {
         el.children[1].style.transform = 'translateY(10vh)';
+        el.style.boxShadow = 'none';
     })
 })

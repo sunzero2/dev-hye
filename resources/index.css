@@ -285,7 +285,7 @@ header {
     color: white;
 }
 
-.project-image {
+.project-image-wrap {
     display: inline-block;
     width: 21vw;
     height: 17vh;
@@ -310,4 +310,8 @@ header {
 
 .space {
     margin-top: 3vh;
+}
+
+.project-image {
+    max-width: 21vw;
 }

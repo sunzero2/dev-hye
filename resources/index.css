@@ -213,19 +213,25 @@ header {
 
 /* skill */
 .skill-content {
-    width: 72vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70vw;
+    margin-left: 4vw;
     padding-left: 15vw;
 }
 
 .skill-wrap {
-    border: 1px solid #656565;
-    border-radius: 50%;
-    width: 11vw;
-    height: 19vh;
+    width: 190px;
+    height: 228px;
     margin-top: 6vh;
     margin-left: 2vw;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.skill-circle {
+    width: 97%;
+    height: 97%;
+    border: 1px solid #656565;
+    border-radius: 50%;
     display: inline-block;
     overflow: hidden;
     transition-duration: 1s;
@@ -236,41 +242,41 @@ header {
     font-family: 'DWImpactamin';
     font-size: larger;
     text-align: center;
-    padding-top: 8.5vh;
+    padding-top: 52%;
 }
 
 .secret-div {
-    width: 11vw;
-    height: 19vh;
+    width: 100%;
+    height: 97%;
     display: inline-block;
     background: #b5ef7f;
-    transform: translateY(10vh);
     transition-duration: 1s;
     opacity: 0.5;
+    transform: translateY(14vh);
 }
 
 /* project */
 .project-content {
-    width: 72vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70vw;
     margin-top: 11vh;
+    margin-left: 12vw;
 }
 
 .project-wrap, .project-secret {
-    width: 55vw;
-    height: 24vh;
+    height: 268px;
     border-radius: 10px;
 }
 
 .project-wrap {
-    margin-left: 8vw;
+    width: 83%;
+    margin-left: 11%;
     margin-bottom: 6vh;
     box-shadow: 0px 2px 4px 1px darkgray;
     color: #272822;
 }
 
 .project-secret {
+    width: 58.8%;
     position: absolute;
     background: #b5ef7f;
     opacity: 0;
@@ -309,7 +315,7 @@ header {
 }
 
 .space {
-    margin-top: 3vh;
+    margin-top: 10%;
 }
 
 .project-image {

@@ -14,12 +14,12 @@ let interval = setInterval(function() {
         width_index = 0;
         introduce = "";
     } else {
-        width = 30 * width_index;
+        width = 2 * width_index;
         introduce = introduce += textArr[index];
         landing_text.innerHTML = introduce;
     }
 
-    text_box.style.width = width + 'px';
+    text_box.style.width = width + 'vw';
 
     index++;
     width_index++;
@@ -36,7 +36,7 @@ window.onscroll = function() {
 }
 
 let skill_per = 0;
-document.querySelectorAll('.skill-wrap').forEach(function(el) {
+document.querySelectorAll('.skill-circle').forEach(function(el) {
     el.addEventListener('mouseover', function() {
         switch(el.children[0].textContent) {
             case 'JavaScript':
@@ -49,7 +49,7 @@ document.querySelectorAll('.skill-wrap').forEach(function(el) {
                 skill_per = -6;
                 break;
             case 'Mybatis':
-                skill_per = -7;
+                skill_per = -6;
                 break;
             case 'HTML/CSS':
                 skill_per = -4;
@@ -69,8 +69,8 @@ document.querySelectorAll('.skill-wrap').forEach(function(el) {
     });
 
     el.addEventListener('mouseout', function() {
-        el.children[1].style.transform = 'translateY(10vh)';
         el.style.boxShadow = 'none';
+        el.children[1].style.transform = 'translateY(14vh)';
     })
 })
 

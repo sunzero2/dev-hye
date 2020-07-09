@@ -18,7 +18,7 @@ let interval = setInterval(function() {
         width_index = 0;
         introduce = "";
     } else {
-        if(screen.width < 1000) {
+        if(screen.width < 1030) {
             width = 3.21 * width_index;
         } else {
             width = 2 * width_index;

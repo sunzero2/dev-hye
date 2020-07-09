@@ -134,14 +134,15 @@ header {
 /* content */
 .content {
     padding-top: 8vh;
+    width: 59%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-wrap {
     margin-top: 12vh;
-    margin-left: 10vw;
 }
 
-/* profile */
 .content-title {
     font-family: 'InfinitySans-BoldA1';
     margin-left: 4vw;
@@ -150,16 +151,15 @@ header {
     color: #272822;
 }
 
+/* profile */
 .info {
     display: inline-block;
 }
 
 .image-box {
-    width: 20vw;
     overflow: hidden;
     border-radius: 50%;
     margin-top: 5vh;
-    margin-left: 17vw;
     display: inline-block;
 }
 
@@ -171,8 +171,8 @@ header {
 .about-me {
     font-family: 'DWImpactamin';
     font-size: xx-large;
-    margin-left: 6vw;
-    margin-top: 12vh;
+    margin-left: 5%;
+    margin-top: 17%;
 }
 
 .contact {
@@ -199,25 +199,11 @@ header {
     font-size: medium;
 }
 
-.github-image {
-    margin-left: 18vw;
-}
-
-.blog-image {
-    margin-left: 18.5vw;
-}
-
-.email-image {
-    margin-left: 18.2vw;
+.contact-text {
+    color: #272822;
 }
 
 /* skill */
-.skill-content {
-    width: 70vw;
-    margin-left: 4vw;
-    padding-left: 15vw;
-}
-
 .skill-wrap {
     width: 190px;
     height: 228px;
@@ -252,14 +238,12 @@ header {
     background: #b5ef7f;
     transition-duration: 1s;
     opacity: 0.5;
-    transform: translateY(14vh);
+    transform: translateY(49%);
 }
 
 /* project */
 .project-content {
-    width: 70vw;
-    margin-top: 11vh;
-    margin-left: 12vw;
+    margin-top: 6vh;
 }
 
 .project-wrap, .project-secret {
@@ -268,15 +252,14 @@ header {
 }
 
 .project-wrap {
-    width: 83%;
-    margin-left: 11%;
+    width: 100%;
     margin-bottom: 6vh;
     box-shadow: 0px 2px 4px 1px darkgray;
     color: #272822;
 }
 
 .project-secret {
-    width: 58.8%;
+    width: 59%;
     position: absolute;
     background: #b5ef7f;
     opacity: 0;

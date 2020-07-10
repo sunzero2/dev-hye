@@ -7,6 +7,8 @@ let text_box = document.querySelector('#text-box');
 let width_index = 0;
 let width;
 
+alert(screen.width);
+
 let interval = setInterval(function() {
     // textArr의 크기보다 크거나 같으면 멈춰야 함
     // 그게 아니라면 디바이스의 width를 확인해서
@@ -19,7 +21,7 @@ let interval = setInterval(function() {
         introduce = "";
     } else {
         if(screen.width < 1030) {
-            width = 3.21 * width_index;
+            width = 3.5 * width_index;
         } else {
             width = 2 * width_index;
         }

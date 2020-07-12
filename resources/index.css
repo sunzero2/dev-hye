@@ -246,61 +246,72 @@ header {
     margin-top: 6vh;
 }
 
-.project-wrap, .project-secret {
-    height: 268px;
-    border-radius: 10px;
-}
-
-.project-wrap {
-    width: 100%;
-    margin-bottom: 6vh;
-    box-shadow: 0px 2px 4px 1px darkgray;
-    color: #272822;
-}
-
-.project-secret {
-    width: 59%;
-    position: absolute;
-    background: #b5ef7f;
-    opacity: 0;
-    transition-duration: 0.3s;
-}
-
-.project-secret-text {
-    font-family: 'DWImpactamin';
-    text-align: center;
-    font-size: x-large;
-    margin-top: 13%;
-    color: white;
-}
-
-.project-image-wrap {
+.card-wrap {
+    width: 280px;
+    height: 400px;
+    position: relative;
     display: inline-block;
-    width: 21vw;
-    height: 17vh;
-    margin-left: 1vw;
-    overflow: hidden;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    transform-style: preserve-3d;
 }
 
-.project-title {
-    font-family: 'DWImpactamin';
-    font-size: larger;
-    margin-left: 2vw;
-    padding-top: 2vh;
-    margin-bottom: 2vh;
+.back-card, .front-card {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition-duration: 1s;
 }
 
-.project-text {
-    font-family: 'BBTreeGL';
-    float: right;
-    width: 30vw;
-    margin-right: 2vw;
+.back-card {
+    transform: rotateY(-180deg);
+    background: #b5ef7f;
 }
 
-.space {
-    margin-top: 10%;
+.front-card {
+    transform: rotateY(0deg);
 }
 
-.project-image {
-    max-width: 21vw;
+.back {
+    transform: rotateY(180deg);
+}
+
+.next {
+    transform: rotateY(0deg);
+}
+
+#teuching {
+    background: url('/resources/image/teuching.jpg');
+    background-size: cover;
+}
+
+#easyveggy {
+    background: url('/resources/image/easyveggy.jpg');
+    background-size: cover;
+}
+
+.card-title {
+    color: #272822;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 15%;
+    font-weight: bolder;
+}
+
+.card-link-wrap {
+    margin-top: 16%;
+    margin-left: 40px;
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+    background: #f3fbeb;
+}
+
+.card-link {
+    display: block;
+    margin-left: 8%;
+    padding-top: 11%;
 }

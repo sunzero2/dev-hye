@@ -8,10 +8,6 @@ let width_index = 0;
 let width;
 
 let interval = setInterval(function() {
-    // textArr의 크기보다 크거나 같으면 멈춰야 함
-    // 그게 아니라면 디바이스의 width를 확인해서
-    // width가 360일 경우 width변수에 3 * width_index를 하고
-    // width가 360보다 커질 경우 width 변수에 2.5 * width_index를 한다.
     if(index >= textArr.length) {
         clearInterval(interval);
     } else if(index == 5) {
@@ -74,11 +70,9 @@ document.querySelectorAll('.skill-circle').forEach(function(el) {
                 break;
         }
         el.children[1].style.transform = 'translateY(' + skill_per + '%)';
-        el.style.boxShadow = '0px 0px 8px 0px #656565';
     });
 
     el.addEventListener('mouseout', function() {
-        el.style.boxShadow = 'none';
         el.children[1].style.transform = 'translateY(49%)';
     })
 })
@@ -90,5 +84,17 @@ document.querySelectorAll('.project-wrap').forEach(function(el) {
 
     el.addEventListener('mouseout', function() {
         el.children[0].children[0].style.opacity = 0;
+    })
+})
+
+document.querySelectorAll('.card-wrap').forEach(function(el) {
+    el.addEventListener('click', function() {
+        if(el.children[0].classList.contains('next')) {
+            el.children[0].classList.remove('next');
+            el.children[1].classList.remove('back');
+        } else {
+            el.children[0].classList.add('next');
+            el.children[1].classList.add('back');
+        }
     })
 })

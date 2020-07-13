@@ -284,12 +284,12 @@ header {
 }
 
 #teuching {
-    background: url(../resources/image/teuching.jpg);
+    background: url(/resources/image/teuching.jpg);
     background-size: cover;
 }
 
 #easyveggy {
-    background: url(../resources/image/easyveggy.jpg);
+    background: url(/resources/image/easyveggy.jpg);
     background-size: cover;
 }
 

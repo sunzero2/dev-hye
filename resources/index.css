@@ -273,16 +273,15 @@ header {
 
 .front-card {
     transform: rotateY(0deg);
+    background: yellowgreen;
 }
 
 .back {
     transform: rotateY(180deg);
-    background: yellowgreen;
 }
 
 .next {
     transform: rotateY(0deg);
-    background: yellow;
 }
 
 /* #teuching {

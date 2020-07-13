@@ -273,7 +273,6 @@ header {
 
 .front-card {
     transform: rotateY(0deg);
-    background: yellowgreen;
 }
 
 .back {
@@ -284,15 +283,15 @@ header {
     transform: rotateY(0deg);
 }
 
-/* #teuching {
-    background: url(/resources/image/teuching.jpg);
+#teuching {
+    background: url(https://sunzero2.github.io/dev-hye/resources/image/teuching.jpg);
     background-size: cover;
 }
 
 #easyveggy {
-    background: url(/resources/image/easyveggy.jpg);
+    background: url(https://sunzero2.github.io/dev-hye/resources/image/easyveggy.jpg);
     background-size: cover;
-} */
+}
 
 .card-title {
     color: #272822;

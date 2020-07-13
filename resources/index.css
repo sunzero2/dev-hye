@@ -277,13 +277,15 @@ header {
 
 .back {
     transform: rotateY(180deg);
+    background: yellowgreen;
 }
 
 .next {
     transform: rotateY(0deg);
+    background: yellow;
 }
 
-#teuching {
+/* #teuching {
     background: url(/resources/image/teuching.jpg);
     background-size: cover;
 }
@@ -291,7 +293,7 @@ header {
 #easyveggy {
     background: url(/resources/image/easyveggy.jpg);
     background-size: cover;
-}
+} */
 
 .card-title {
     color: #272822;

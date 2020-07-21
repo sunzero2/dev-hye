@@ -1,4 +1,4 @@
-let text = '안녕하세요 신입 웹개발자 이혜영입니다';
+let text = '안녕하세요 신입 개발자 이혜영입니다';
 let textArr = text.split("");
 let index = 0;
 let introduce = "";
@@ -10,6 +10,7 @@ let width;
 let interval = setInterval(function() {
     if(index >= textArr.length) {
         clearInterval(interval);
+        document.querySelector('.scroll').style.display = 'block';
     } else if(index == 5) {
         width_index = 0;
         introduce = "";
@@ -17,7 +18,7 @@ let interval = setInterval(function() {
         if(screen.width < 1030) {
             width = 3.5 * width_index;
         } else {
-            width = 2 * width_index;
+            width = 2.4 * width_index;
         }
 
         introduce = introduce += textArr[index];

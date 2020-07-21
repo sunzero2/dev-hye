@@ -131,6 +131,15 @@ header {
     from {border-right: none;}
     to {border-right: 3px solid #ececec;}
 }
+
+.scroll {
+    text-align: center;
+    line-height: 85vh;
+    font-family: 'InfinitySans-BoldA1';
+    display: none;
+    transition-duration: 1s;
+}
+
 /* content */
 .content {
     padding-top: 8vh;

@@ -19,58 +19,33 @@ a {
     text-decoration: none;
 }
 
-a:link,
-a:visited {
-    color: #272822;
-}
-
 a:hover {
-    color: #a4da72;
+    color: #ff8100;
 }
 
-hr {
-    width: 3vw;
-    border: 0;
-    border-top: 3px solid;
-    border-color: #272822;
-    float: left;
-    margin-top: 1.5vh;
+.content-title {
+    font-family: "allura";
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff8100;
 }
-
 /* font */
+/* header font */
 @font-face {
-    font-family: 'InfinitySans-BoldA1';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url(fonts/Allura-Regular.ttf);
+    font-family: "allura";
+}
+
+/* 기본 폰트 */
+@font-face {
+    src: url(fonts/NanumBarunGothic-YetHangul.ttf);
+    font-family: "nanum";
 }
 
 @font-face {
-    font-family: 'NeoDunggeunmo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream-1Thin';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DWImpactamin';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/DWImpactamin.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BBTreeGL';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url(fonts/Lora-Bold.ttf);
+    font-family: "lora";
 }
 
 /* header */
@@ -79,85 +54,54 @@ header {
     height: 8vh;
     width: 100%;
     transition-duration: 0.3s;
-    opacity: 0;
-    background: #272822;
     color: #ececec;
     z-index: 999;
+    font-family: "allura";
+}
+
+header:hover {
+    background: #272822;
 }
 
 .head-title {
-    font-size: x-large;
-    font-family: 'InfinitySans-BoldA1';
-    border-right: 1px solid #ececec;
+    font-size: 30px;
     margin-left: 1vw;
     line-height: 7.5vh;
+    display: inline-block;
 }
 
-/* navi */
-#navi {
-    font-family: 'NeoDunggeunmo';
-    position: fixed;
-    margin-left: 90vw;
-    margin-top: 48vh;
-    line-height: 30px;
-    color: #272822;
-
+.head-link {
+    color: #ececec;
+    float: right;
+    line-height: 7.5vh;
+    font-size: 21px;
+    margin-right: 30px;
 }
 
 /* landing */
 #landing {
     height: 100vh;
-    background: #272822;
-    color: #ececec;
+    background-image: url(https://source.unsplash.com/xrVDYZRGdw4);
+    background-size: cover;
+    color: #fff;
 }
 
 #text-box {
-    padding-top: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    padding-top: 37vh;
+    margin-left: 11vw;
+    width: 50vw;
 }
 
 .landing-text {
-    font-family: 'InfinitySans-BoldA1';
-    font-size: xxx-large;
-    width: max-content;
-    animation-name: typing;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    font-family: "lora";
+    font-size: 80px;
 }
 
-@keyframes typing {
-    from {border-right: none;}
-    to {border-right: 3px solid #ececec;}
-}
-
-.scroll {
-    text-align: center;
-    line-height: 85vh;
-    font-family: 'InfinitySans-BoldA1';
-    display: none;
-    transition-duration: 1s;
-}
-
-/* content */
-.content {
-    padding-top: 8vh;
-    width: 59%;
+#profile, #project {
+    padding-top: 16vh;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.title-wrap {
-    margin-top: 12vh;
-}
-
-.content-title {
-    font-family: 'InfinitySans-BoldA1';
-    margin-left: 4vw;
-    font-size: xx-large;
-    font-weight: bold;
-    color: #272822;
 }
 
 /* profile */
@@ -170,42 +114,55 @@ header {
     border-radius: 50%;
     margin-top: 5vh;
     display: inline-block;
+    width: 35%;
 }
 
 .title-image {
-    width: 28vw;
-    margin-left: -7vw;
+    width: 100%;
 }
 
 .about-me {
-    font-family: 'DWImpactamin';
-    font-size: xx-large;
-    margin-left: 5%;
-    margin-top: 17%;
+    font-family: "nanum";
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 9%;
+    text-align: center;
+}
+
+.profile-hr {
+    margin-top: 3vh;
+    background: #272822;
+    height: 1px;
+    border: none;
 }
 
 .contact {
-    line-height: 4vh;
-    margin-top: 3vh;
+    line-height: 39px;
+    margin-top: 2vh;
+    font-size: 14px;
 }
 
 .about-me-cont {
-    font-family: 'BBTreeGL';
-    font-size: large;
+    font-family: "nanum";
+    font-size: 17px;
+    text-align: center;
 }
 
-.contact-image, .contact-link {
+.contact-image,
+.contact-link-wrap {
     display: inline-block;
 }
 
-.contact-link {
+.contact-link-wrap {
     margin-left: 2vw;
 }
 
 .contact-common {
-    font-family: 'InfinitySans-BoldA1';
     width: max-content;
-    font-size: medium;
+}
+
+.contact-link {
+    color: #272822;
 }
 
 .contact-text {
@@ -213,44 +170,22 @@ header {
 }
 
 /* skill */
-.skill-wrap {
-    width: 190px;
-    height: 228px;
-    margin-top: 6vh;
-    margin-left: 2vw;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.skill-circle {
-    width: 97%;
-    height: 97%;
-    border: 1px solid #656565;
-    border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
-    transition-duration: 1s;
-}
-
-.skill-title {
-    color: #272822;
-    font-family: 'DWImpactamin';
-    font-size: larger;
-    text-align: center;
-    padding-top: 52%;
-}
-
-.secret-div {
+#skill {
+    margin-top: 20vh;
+    padding-top: 9vh;
+    background: #272822;
     width: 100%;
-    height: 97%;
-    display: inline-block;
-    background: #b5ef7f;
-    transition-duration: 1s;
-    opacity: 0.5;
-    transform: translateY(49%);
+    height: 50%;
 }
 
 /* project */
+.project-subtext {
+    color: #272822;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
 .project-content {
     margin-top: 6vh;
 }
@@ -265,7 +200,8 @@ header {
     transform-style: preserve-3d;
 }
 
-.back-card, .front-card {
+.back-card,
+.front-card {
     width: 100%;
     height: 100%;
     /* border: 1px solid black; */
@@ -277,7 +213,7 @@ header {
 
 .back-card {
     transform: rotateY(-180deg);
-    background: #b5ef7f;
+    background: #272822;
 }
 
 .front-card {
@@ -303,24 +239,25 @@ header {
 }
 
 .card-title {
-    color: #272822;
-    font-size: xx-large;
+    color: #ececec;
+    font-size: 30px;
     text-align: center;
     margin-top: 15%;
     font-weight: bolder;
 }
 
-.card-link-wrap {
-    margin-top: 16%;
-    margin-left: 40px;
-    width: 200px;
-    height: 240px;
-    border-radius: 10px;
-    background: #f3fbeb;
+.card-explain-wrap {
+    padding: 40px 20px 40px 20px;
+}
+
+.card-explain {
+    color: #ececec;
+    font-size: 13px;
 }
 
 .card-link {
-    display: block;
-    margin-left: 8%;
-    padding-top: 11%;
+    color: #ececec;
+    margin-left: 14%;
+    padding-top: 3%;
+    font-size: 13px;
 }

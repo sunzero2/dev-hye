@@ -5,134 +5,84 @@
         <title>Lee HyeYeong</title>
     </head>
     <body>
-
-        <header id="header">
+        <!-- header -->
+        <header>
             <p class="head-title">Developer Hye</p>
+            <a href="#project" class="head-link">Project</a>
+            <a href="#skill" class="head-link">Skill</a>
+            <a href="#profile" class="head-link">Profile</a>
         </header>
-        
-        <nav id="navi">
-            <ul>
-                <li><a href="#profile">PROFILE</a></li>
-                <li><a href="#skill">SKILL</a></li>
-                <li><a href="#project">PROJECT</a></li>
-            </ul>
-        </nav>
-        
+        <!-- landing -->
         <section id="landing">
-            <div id="text-box">
-                <p class="landing-text"></p>
-            </div>
-            <p class="scroll">scroll ↓</p>
+            <article id="text-box">
+                <p class="landing-text">Developer</p>
+                <p class="landing-text">Lee Hyeyeong<a class="landing-text" style="color: #ff8100;">.</a></p>
+            </article>
         </section>
-        
-        <section class="content">
-            <div id="profile">
-                <div class="title-wrap">
-                    <hr>
-                    <p class="content-title">PROFILE</p>
-                </div>
-                <div class="info">
+        <main class="content">
+            <!-- profile -->
+            <section id="profile">
+                <p class="content-title">My Project</p>
+                <article class="info">
                     <div class="image-box">
                         <img class="title-image" src="resources/image/title_image.jpg">
                     </div>
-                    <ul style="float: right; width: 62%;">
-                        <li>
-                            <p class="about-me">"코딩과 블로그가 취미인 신입 개발자입니다."</p>
-                        </li>
-                        <li style="margin-left: 3%; line-height: 26px;">
-                            <p class="about-me-cont" style="margin-top: 3vh;">공부한 것을 블로그에 정리하는 걸 좋아합니다.</p>
-                            <p class="about-me-cont">누구나, 언제든지 볼 수 있기에 더 깊게 공부하여 명확한 정보를 전달하려 노력합니다.</p>
-                            <p class="about-me-cont">깊게 공부한 지식은 코드를 작성할 때, 여러 부분을 고려할 수 있도록 도움을 줍니다.</p>
-                            <p class="about-me-cont">더 좋은 코드를 위해 OOP, Design Pattern 등 기초부터 탄탄히 쌓아올리고 있습니다.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact">
-                    <div class="contact-image">
-                        <p class="github-image contact-common">Github</p>
-                        <p class="blog-image contact-common">Blog</p>
-                        <p class="blog-image contact-common">Cell</p>
-                        <p class="email-image contact-common">Email</p>
-                    </div>
-                    <div class="contact-link">
-                        <a href="https://github.com/sunzero2"><p>https://github.com/sunzero2</p></a>
-                        <a href="https://blog.naver.com/sun_zero2"><p>https://blog.naver.com/sun_zero2</p></a>
-                        <p class="contact-text">010-5282-9355</p>
-                        <p class="contact-text">sun_zero2@naver.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="skill">
-                <div class="title-wrap">
-                    <hr>
-                    <p class="content-title">SKILL</p>
-                </div>
-                <div class="skill-content">
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">JavaScript</p>
-                            <div class="secret-div"></div>
+                    <div style="float: right;">
+                        <ul style="width: 100%;">
+                            <li>
+                                <p class="about-me">"코딩과 블로그가 취미인 신입 개발자입니다."</p>
+                            </li>
+                            <li style="line-height: 26px;">
+                                <p class="about-me-cont" style="margin-top: 3vh;">공부한 것을 블로그에 정리하는 걸 좋아합니다.</p>
+                                <p class="about-me-cont">누구나, 언제든지 볼 수 있기에 더 깊게 공부하여 명확한 정보를 전달하려 노력합니다.</p>
+                                <p class="about-me-cont">깊게 공부한 지식은 코드를 작성할 때, 여러 부분을 고려할 수 있도록 도움을 줍니다.</p>
+                                <p class="about-me-cont">더 좋은 코드를 위해 OOP, Design Pattern 등 기초부터 탄탄히 쌓아올리고 있습니다.</p>
+                            </li>
+                        </ul>
+                        <hr class="profile-hr">
+                        <div class="contact">
+                            <div class="contact-image">
+                                <p class="github-image contact-common">Github</p>
+                                <p class="blog-image contact-common">Blog</p>
+                                <p class="blog-image contact-common">Cell</p>
+                                <p class="email-image contact-common">Email</p>
+                            </div>
+                            <div class="contact-link-wrap">
+                                <a class="contact-link" href="https://github.com/sunzero2"><p>https://github.com/sunzero2</p></a>
+                                <a class="contact-link" href="https://blog.naver.com/sun_zero2"><p>https://blog.naver.com/sun_zero2</p></a>
+                                <p class="contact-text">010-5282-9355</p>
+                                <p class="contact-text">sun_zero2@naver.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">Java</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">Spring</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">Mybatis</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">HTML/CSS</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">GitHub</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">Oracle/MySQL</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                    <div class="skill-wrap">
-                        <div class="skill-circle">
-                            <p class="skill-title">AWS</p>
-                            <div class="secret-div"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project">
-                <div class="title-wrap">
-                    <hr>
-                    <p class="content-title">PROJECT</p>
-                </div>
-                <div class="project-content">
+                </article>
+            </section>
+            <!-- skill -->
+            <section id="skill">
+                <p class="content-title">My Skill</p>
+                <article class="skill-content">
+                    
+                </article>
+            </section>
+            <!-- project -->
+            <section id="project">
+                <p class="content-title">My Project</p>
+                <p class="project-subtext">카드를 클릭하면 상세 내역을 확인하실 수 있습니다.</p>
+                <article class="project-content">
                     <div class="card-wrap">
                         <div class="back-card">
                             <p class="card-title">TeuChing</p>
+                            <div class="card-explain-wrap">
+                                <p class="card-explain">사용자의 니즈에 맞는 트레이너를 추천, 매칭을 지원하는 웹사이트입니다.</p>
+                                <p class="card-explain">추천 트레이너의 일정을 확인하고 예약할 수 있습니다. 트레이너는 요청을 수락, 거절할 수 있습니다.</p>
+                                <p class="card-explain">매칭이 확정될 경우 리뷰를 작성할 수 있습니다.</p>
+                                <p class="card-explain">트레이너 혹은 리뷰를 신고할 수 있으며, 관리자의 확인 후 진행됩니다.</p>
+                            </div>
+                            <hr style="width: 85%;">
                             <div class="card-link-wrap">
                                 <a class="card-link" href="https://sunzero2.github.io/dev-hye/resources/pdf/teuching_pdf.pdf" download>PDF</a>
                                 <a class="card-link" href="http://52.78.116.59:8080/teuching">Service</a>
-                                <a class="card-link" href="https://github.com/sunzero2/TeuChing_Final">GitHub</a>
+                                <a class="card-link" href="https://github.com/sunzero2/TeuChing_Final">Github</a>
                             </div>
                         </div>
                         <div class="front-card" id="teuching"></div>
@@ -140,17 +90,24 @@
                     <div class="card-wrap">
                         <div class="back-card">
                             <p class="card-title">Easy-Veggy</p>
+                            <div class="card-explain-wrap">
+                                <p class="card-explain">키워드에 맞는 채식 메뉴를 추천해주는 웹사이트입니다.</p>
+                                <p class="card-explain">여러가지 재료 중 3가지를 선택하여 본인의 채식 지향 타입을 알 수 있습니다.</p>
+                                <p class="card-explain">해당 채식 지향에 알맞는 메뉴를 추천받을 수 있습니다.</p>
+                                <p class="card-explain">회원은 채식 지향을 선택할 수 있고, 캘린더에 채식한 날을 표시하여 채식을 지속할 수 있도록 지원합니다.</p>
+                            </div>
+                            <hr style="width: 85%;">
                             <div class="card-link-wrap">
                                 <a class="card-link" href="#">PDF</a>
                                 <a class="card-link" href="http://52.78.116.59:8080/easyveggy">Service</a>
-                                <a class="card-link" href="https://github.com/sunzero2/easyveggy">GitHub</a>
+                                <a class="card-link" href="https://github.com/sunzero2/easyveggy">Github</a>
                             </div>
                         </div>
                         <div class="front-card" id="easyveggy"></div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </article>
+            </section>
+        </main>
         <script src="resources/index.js"></script>
     </body>
 </html>

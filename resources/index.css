@@ -127,6 +127,7 @@ header:hover {
     font-weight: bold;
     margin-top: 9%;
     text-align: center;
+    color: #272822;
 }
 
 .profile-hr {
@@ -146,11 +147,13 @@ header:hover {
     font-family: "nanum";
     font-size: 17px;
     text-align: center;
+    color: #272822;
 }
 
 .contact-image,
 .contact-link-wrap {
     display: inline-block;
+    color: #272822;
 }
 
 .contact-link-wrap {
@@ -173,11 +176,41 @@ header:hover {
 #skill {
     margin-top: 20vh;
     padding-top: 9vh;
+    padding-bottom: 9vh;
     background: #272822;
     width: 100%;
-    height: 50%;
 }
 
+.skill-content {
+    width: 75%;
+    margin: 80px auto;
+}
+
+.skill-set-wrap {
+    display: inline-block;
+    color: #ececec;
+    width: 30%;
+    height: 130px;
+}
+
+.skill-set-title {
+    font-family: "lora";
+    font-size: 45px;
+}
+
+.skill-top-empty {
+    margin-top: 50px;
+}
+
+.skill-left-empty {
+    margin-left: 4.5%;
+}
+
+.skill-text {
+    list-style: inside;
+    margin-top: 12px;
+    font-size: 13px;
+}
 /* project */
 .project-subtext {
     color: #272822;

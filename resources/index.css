@@ -30,6 +30,7 @@ a:hover {
     text-align: center;
     color: #ff8100;
 }
+
 /* font */
 /* header font */
 @font-face {
@@ -97,7 +98,8 @@ header:hover {
     font-size: 80px;
 }
 
-#profile, #project {
+#profile,
+#project {
     padding-top: 16vh;
     width: 75%;
     margin-left: auto;
@@ -119,6 +121,10 @@ header:hover {
 
 .title-image {
     width: 100%;
+}
+
+#profile-content {
+    float: right;
 }
 
 .about-me {
@@ -211,6 +217,7 @@ header:hover {
     margin-top: 12px;
     font-size: 13px;
 }
+
 /* project */
 .project-subtext {
     color: #272822;
@@ -293,4 +300,51 @@ header:hover {
     margin-left: 14%;
     padding-top: 3%;
     font-size: 13px;
+}
+
+/* mobile */
+@media only screen and (max-width: 900px) {
+    .head-title {
+        font-size: 60px;
+    }
+
+    .content-title {
+        font-size: 90px;
+    }
+
+    .head-link {
+        font-size: 35px;
+    }
+
+    .image-box {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #profile-content {
+        float: none;
+    }
+
+    .skill-content {
+        width: 100%;
+    }
+
+    .skill-top-empty {
+        margin-top: 0;
+    }
+
+    .skill-left-empty {
+        margin-left: 0;
+    }
+
+    .skill-set-wrap {
+        width: 44%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-set-title {
+        font-size: 37px;
+    }
 }

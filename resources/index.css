@@ -354,7 +354,8 @@ header:hover {
     }
 
     #text-box {
-        width: 100%;
+        display: inline-block;
+        width: 70vw;
     }
 
     .landing-text {

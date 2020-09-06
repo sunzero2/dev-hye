@@ -179,7 +179,8 @@ header:hover {
 }
 
 /* skill */
-#skill {
+#skill,
+#career {
     margin-top: 20vh;
     padding-top: 9vh;
     padding-bottom: 9vh;
@@ -216,6 +217,7 @@ header:hover {
     list-style: inside;
     margin-top: 12px;
     font-size: 13px;
+    font-family: 'nanum';
 }
 
 /* project */
@@ -302,6 +304,71 @@ header:hover {
     font-size: 13px;
 }
 
+/* career */
+.career-content {
+    margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.career-title-box {
+    display: inline;
+}
+
+.career-text-wrapper {
+    color: #ececec;
+    font-family: 'nanum';
+    margin-left: 2%;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.career-title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#career-hr {
+    background: #ff8100;
+    border: none;
+    height: 7px;
+}
+
+#absolute-box {
+    width: 75%;
+    height: 30px;
+    position: absolute;
+    margin-top: -23px;
+}
+
+.circle {
+    background: #ff8100;
+    width: 2%;
+    height: 100%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.inner-circle {
+    width: 74%;
+    height: 73%;
+    border-radius: 50%;
+    background: #ececec;
+    margin: 17% 14%;
+}
+#career1,
+#career3 {
+    margin-left: 8%;
+}
+
+#career2 {
+    margin-left: 14%;
+}
+
+.edu {
+    background: #2f5cb3;
+}
 /* mobile */
 @media only screen and (max-width: 1030px) {
     .head-title {
@@ -340,6 +407,23 @@ header:hover {
     .skill-set-wrap {
         width: 44%;
         margin-left: 5%;
+    }
+
+    #career-connection {
+        display: none;
+    }
+
+    .career-text-wrapper {
+        width: 100%;
+        height: 139px;
+        padding-top: 33px;
+        float: none;
+        text-align: center;
+    }
+
+    .circle {
+        width: 100%;
+        height: 42%;
     }
 }
 

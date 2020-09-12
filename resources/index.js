@@ -1,7 +1,6 @@
 let header = document.querySelector("header");
 
-// 소스트리 브랜치 테스트
-// 풀리퀘해보기2222
+// test22222
 window.onscroll = function() {
     if(window.scrollY >= 100) {
         header.style.opacity = 0;

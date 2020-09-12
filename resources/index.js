@@ -1,9 +1,5 @@
 let header = document.querySelector("header");
 
-<<<<<<< HEAD
-=======
-// test22222
->>>>>>> 1c133d8e969329d6c19b24973961d7410e7de23c
 window.onscroll = function() {
     if(window.scrollY >= 100) {
         header.style.opacity = 0;

@@ -1,6 +1,5 @@
 let header = document.querySelector("header");
 
-// 소스트리 브랜치 테스트
 window.onscroll = function() {
     if(window.scrollY >= 100) {
         header.style.opacity = 0;

@@ -1,5 +1,6 @@
 let header = document.querySelector("header");
 
+// 안녕하세요 test1입니다.
 window.onscroll = function() {
     if(window.scrollY >= 100) {
         header.style.opacity = 0;

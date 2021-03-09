@@ -1,10 +1,10 @@
-let header = document.querySelector("header");
+let nav = document.querySelector("nav");
 
 window.onscroll = function() {
     if(window.scrollY >= 100) {
-        header.style.opacity = 0;
+        nav.style.opacity = 0;
     } else {
-        header.style.opacity = 1;
+        nav.style.opacity = 1;
     }
 }
 
@@ -17,5 +17,11 @@ document.querySelectorAll('.card-wrap').forEach(function(el) {
             el.children[0].classList.add('next');
             el.children[1].classList.add('back');
         }
-    })
+    });
 });
+
+document.querySelectorAll('.card-link').forEach(function(el) {
+    el.addEventListener('click', function(event) {
+        event.stopPropagation();
+    })
+})

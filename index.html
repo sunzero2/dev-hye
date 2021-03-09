@@ -1,213 +1,156 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="resources/index.css">
-        <title>Lee HyeYeong</title>
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <p class="head-title">Developer Hye</p>
-            <a href="#career" class="head-link">Career</a>
-            <a href="#project" class="head-link">Project</a>
-            <a href="#skill" class="head-link">Skill</a>
-            <a href="#profile" class="head-link">Profile</a>
-        </header>
-        <!-- landing -->
-        <section id="landing">
-            <article id="text-box">
-                <p class="landing-text">Developer</p>
-                <p class="landing-text">Lee Hyeyeong<a class="landing-text" style="color: #ff8100;">.</a></p>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <title>Lee HyeYeong</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <p class="head-title">Developer Hye</p>
+        <a href="#skill" class="head-link">Skill</a>
+        <a href="#other" class="head-link">Other Experience</a>
+        <a href="#work" class="head-link">Work Experience</a>
+        <a href="#introduce" class="head-link">Introduce</a>
+    </nav>
+
+    <main class="content">
+        <!-- profile -->
+        <section id="introduce">
+            <p class="content-title">Introduce</p>
+            <article class="info">
+                <div class="image-box">
+                    <img class="title-image" src="resources/image/title_image.jpg">
+                </div>
+                <div id="profile-content">
+                    <ol style="width: 100%;">
+                        <li>
+                            <p class="about-me">"공유하는 개발자 이혜영입니다"</p>
+                        </li>
+                        <li style="line-height: 26px;">
+                            <p class="about-me-cont" style="margin-top: 3vh;">공부한 것들을 블로그를 통해 공유하고 있습니다.</p>
+                            <p class="about-me-cont">주로 웹과 Computer Science와 관련된 개발 지식을 공부하고 있습니다.</p>
+                            <br>
+                            <p class="about-me-cont">새로운 것을 배우는데 두려움이 없고, 빠르게 습득합니다.</p>
+                            <p class="about-me-cont">Node.js, React.js, JPA 등 기존에 사용해보지 못한 것들을 공부하여 스택 폭을 늘려나가고 있습니다.</p>
+                        </li>
+                    </ol>
+                    <hr class="profile-hr">
+                    <div class="contact">
+                        <div class="contact-image">
+                            <p class="github-image contact-common">Github</p>
+                            <p class="blog-image contact-common">Blog</p>
+                            <p class="blog-image contact-common">Cell</p>
+                            <p class="email-image contact-common">Email</p>
+                        </div>
+                        <div class="contact-link-wrap">
+                            <a class="contact-link" href="https://github.com/sunzero2" target="_blank">
+                                <p>https://github.com/sunzero2</p>
+                            </a>
+                            <a class="contact-link" href="https://blog.naver.com/sun_zero2" target="_blank">
+                                <p>https://blog.naver.com/sun_zero2</p>
+                            </a>
+                            <p class="contact-text">010-5282-9355</p>
+                            <p class="contact-text">sun_zero2@naver.com</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
-        <main class="content">
-            <!-- profile -->
-            <section id="profile">
-                <p class="content-title">My Profile</p>
-                <article class="info">
-                    <div class="image-box">
-                        <img class="title-image" src="resources/image/title_image.jpg">
+        <!-- work experience -->
+        <section id="work">
+            <p class="content-title">Work Experience</p>
+            <article class="experience-content">
+                <div class="content-wrap">
+                    <u class="experience-title">nGle</u>
+                    <div class="left">
+                        <p class="experience-sub">Web Developer / <br>System Integration</p>
+                        <p style="font-size: 13px; color: grey;">2020.09.01 ~ 재직중</p>
                     </div>
-                    <div id="profile-content">
-                        <ul style="width: 100%;">
+                    <div class="right">
+                        <strong>LG</strong>
+                        <ul>
+                            <li><p>LG ThinQ 앱 내 체험하기 개발</p></li>
+                            <li><p>Jenkins CI/CD 자동화</p></li>
+                        </ul>
+                        <br>
+                        <strong>KakaoGames</strong>
+                        <ul>
                             <li>
-                                <p class="about-me">"코딩과 블로그가 취미인 신입 개발자입니다."</p>
+                                <p>다음게임 <a class="work-link" href="http://popcorn.game.daum.net/popcorn/index" target="_blank"><u>쌤쌤마트</u></a> 랭킹 API 개발</p>
                             </li>
-                            <li style="line-height: 26px;">
-                                <p class="about-me-cont" style="margin-top: 3vh;">공부한 것을 블로그에 정리하는 걸 좋아합니다.</p>
-                                <p class="about-me-cont">누구나, 언제든지 볼 수 있기에 더 깊게 공부하여 명확한 정보를 전달하려 노력합니다.</p>
-                                <p class="about-me-cont">깊게 공부한 지식은 코드를 작성할 때, 여러 부분을 고려할 수 있도록 도움을 줍니다.</p>
-                                <p class="about-me-cont">더 좋은 코드를 위해 OOP, Design Pattern 등 기초부터 탄탄히 쌓아올리고 있습니다.</p>
-                            </li>
-                        </ul>
-                        <hr class="profile-hr">
-                        <div class="contact">
-                            <div class="contact-image">
-                                <p class="github-image contact-common">Github</p>
-                                <!-- <p class="github-image contact-common">Tistory</p> -->
-                                <p class="blog-image contact-common">Blog</p>
-                                <p class="blog-image contact-common">Cell</p>
-                                <p class="email-image contact-common">Email</p>
-                            </div>
-                            <div class="contact-link-wrap">
-                                <a class="contact-link" href="https://github.com/sunzero2"><p>https://github.com/sunzero2</p></a>
-                                <!-- <a class="contact-link" href="https://dev-hye.tistory.com/"><p>https://dev-hye.tistory.com/</p></a> -->
-                                <a class="contact-link" href="https://blog.naver.com/sun_zero2"><p>https://blog.naver.com/sun_zero2</p></a>
-                                <p class="contact-text">010-5282-9355</p>
-                                <p class="contact-text">sun_zero2@naver.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- skill -->
-            <section id="skill">
-                <p class="content-title">My Skill</p>
-                <article class="skill-content">
-                    <div class="skill-set-wrap">
-                        <p class="skill-set-title">HTML/CSS</p>
-                        <ul class="skill-text">
-                            <li>HTML5 Semantic Tag</li>
-                            <li>Class, Id, Name 사용 가능</li>
+                            <li><p>백오피스 API 개발</p></li>
                         </ul>
                     </div>
-                    <div class="skill-set-wrap skill-left-empty">
-                        <p class="skill-set-title">Javascript</p>
-                        <ul class="skill-text">
-                            <li>Promise, async&await</li>
-                            <li>Vanilla JS</li>
+                </div>
+            </article>
+        </section>
+        <!-- other experience -->
+        <section id="other">
+            <p class="content-title">Other Experience</p>
+            <article class="experience-content">
+                <div class="content-wrap other">
+                    <u class="experience-title">국가인적자원개발컨소시엄</u>
+                    <div class="left">
+                        <p style="font-size: 13px; color: grey;">2021.03.09 ~ 2021.03.12</p>
+                    </div>
+                    <div class="right">
+                        <strong>MSA(Micro Service Architecture) 개발자 과정 수료</strong>
+                        <ul>
+                            <li><p>SpringBoot로 MSA 개발</p></li>
+                            <li><p>Docker, Kubernetes</p></li>
+                            <li><p>GitLab CI/CD 배포</p></li>
                         </ul>
                     </div>
-                    <div class="skill-set-wrap skill-left-empty">
-                        <p class="skill-set-title">Spring</p>
-                        <ul class="skill-text">
-                            <li>Spring Boot</li>
-                            <li>Spring MVC 이해</li>
+                </div>
+                <div class="content-wrap other">
+                    <u class="experience-title">KH정보교육원</u>
+                    <div class="left">
+                        <p style="font-size: 13px; color: grey;">2019.12.19 ~ 2020.06.24</p>
+                    </div>
+                    <div class="right">
+                        <strong>UI/UX 스마트콘텐츠 융합 응용 SW 엔지니어링 양성 과정 수료</strong>
+                        <ul>
+                            <li><p>FrontEnd(HTML, CSS, JavaScript)</p></li>
+                            <li><p>BackEnd(Java, MyBatis, Spring)</p></li>
+                            <li><p>Database(Oracle)</p></li>
+                            <li><p>Project(<a class="other-link" href="https://github.com/sunzero2/A2BO" target="_blank"><u>EasyVeggy</u></a>, <a class="other-link" href="https://github.com/sunzero2/TEUCHING" target="_blank"><u>Teuching</u></a>)</p></li>
                         </ul>
                     </div>
-                    <div class="skill-set-wrap skill-top-empty">
-                        <p class="skill-set-title">Java</p>
-                        <ul class="skill-text">
-                            <li>Reflection, Thread 등 이해</li>
-                            <li>JUnit Test</li>
-                        </ul>
-                    </div>
-                    <div class="skill-set-wrap skill-top-empty skill-left-empty">
-                        <p class="skill-set-title">SQL</p>
-                        <ul class="skill-text">
-                            <li>Oracle, MySQL</li>
-                            <li>RDB를 이해</li>
-                        </ul>
-                    </div>
-                    <div class="skill-set-wrap skill-top-empty skill-left-empty">
-                        <p class="skill-set-title">AWS</p>
-                        <ul class="skill-text">
-                            <li>EC2, RDS 사용</li>
-                            <li>Ubuntu Linux 사용</li>
-                        </ul>
-                    </div>
-                    <div class="skill-set-wrap skill-top-empty">
-                        <p class="skill-set-title">Git</p>
-                        <ul class="skill-text">
-                            <li>Merge, Commit, Push 등 이해</li>
-                            <li>Project 생성 및 Clone 가능</li>
-                        </ul>
-                    </div>
-                    <div class="skill-set-wrap skill-top-empty skill-left-empty">
-                        <p class="skill-set-title">REST API</p>
-                        <ul class="skill-text">
-                            <li>RESTful 이해</li>
-                            <li>CRUD를 이해, 사용</li>
-                        </ul>
-                    </div>
-                    <div class="skill-set-wrap skill-top-empty skill-left-empty">
-                        <p class="skill-set-title">MyBatis</p>
-                        <ul class="skill-text">
-                            <li>SqlSession, SqlMapper 등 이해</li>
-                            <li>JDBC → MyBatis 변환</li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
-            <!-- project -->
-            <section id="project">
-                <p class="content-title">My Project</p>
-                <p class="project-subtext">카드를 클릭하면 상세 내역을 확인하실 수 있습니다.</p>
-                <article class="project-content">
-                    <div class="card-wrap">
-                        <div class="back-card">
-                            <p class="card-title">TeuChing</p>
-                            <div class="card-explain-wrap">
-                                <p class="card-explain">사용자의 니즈에 맞는 트레이너를 추천, 매칭을 지원하는 웹사이트입니다.</p>
-                                <p class="card-explain">추천 트레이너의 일정을 확인하고 예약할 수 있습니다. 트레이너는 요청을 수락, 거절할 수 있습니다.</p>
-                                <p class="card-explain">매칭이 확정될 경우 리뷰를 작성할 수 있습니다.</p>
-                                <p class="card-explain">트레이너 혹은 리뷰를 신고할 수 있으며, 관리자의 확인 후 진행됩니다.</p>
-                            </div>
-                            <hr style="width: 85%;">
-                            <div class="card-link-wrap">
-                                <a class="card-link" href="https://sunzero2.github.io/dev-hye/resources/pdf/teuching_pdf.pdf" download>PDF</a>
-                                <!-- <a class="card-link" href="http://52.78.116.59:8080/teuching">Service</a> -->
-                                <a class="card-link" href="https://github.com/sunzero2/TeuChing_Final">Github</a>
-                            </div>
-                        </div>
-                        <div class="front-card" id="teuching"></div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="back-card">
-                            <p class="card-title">Easy-Veggy</p>
-                            <div class="card-explain-wrap">
-                                <p class="card-explain">키워드에 맞는 채식 메뉴를 추천해주는 웹사이트입니다.</p>
-                                <p class="card-explain">여러가지 재료 중 3가지를 선택하여 본인의 채식 지향 타입을 알 수 있습니다.</p>
-                                <p class="card-explain">해당 채식 지향에 알맞는 메뉴를 추천받을 수 있습니다.</p>
-                                <p class="card-explain">회원은 채식 지향을 선택할 수 있고, 캘린더에 채식한 날을 표시하여 채식을 지속할 수 있도록 지원합니다.</p>
-                            </div>
-                            <hr style="width: 85%;">
-                            <div class="card-link-wrap">
-                                <!-- <a class="card-link" href="http://52.78.116.59:8080/easyveggy">Service</a> -->
-                                <a class="card-link" href="https://github.com/sunzero2/easyveggy">Github</a>
-                            </div>
-                        </div>
-                        <div class="front-card" id="easyveggy"></div>
-                    </div>
-                </article>
-            </section>
-            <!-- career -->
-            <section id="career">
-                <p class="content-title">My Career</p>
-                <article class="career-content">
-                    <div class="career-title-box">
-                        <div class="career-text-wrapper">
-                            <p class="career-date">2013.03 - 2016.02</p>
-                            <p class="career-position">유통마케팅 금융과</p>
-                            <p class="career-title">문학정보고등학교</p>
-                        </div>
-                        <div class="career-text-wrapper">
-                            <p class="career-date">2019.12 - 2020.06</p>
-                            <p class="career-position">UI/UX 스마트콘텐츠 융합 응용 <br>SW 엔지니어링 양성과정</p>
-                            <p class="career-title">KH정보교육원</p>
-                        </div>
-                        <div class="career-text-wrapper">
-                            <p class="career-date">2020.09 - </p>
-                            <p class="career-position">서비스개발팀</p>
-                            <p class="career-title">nGle</p>
-                        </div>
-                    </div>
-                    <hr id="career-hr">
-                    <div id="absolute-box">
-                        <div id="career1" class="circle">
-                            <div class="inner-circle edu"></div>
-                        </div>
-                        <div id="career2" class="circle">
-                            <div class="inner-circle edu"></div>
-                        </div>
-                        <div id="career3" class="circle">
-                            <div class="inner-circle"></div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-        <script src="resources/index.js"></script>
-    </body>
+                </div>
+            </article>
+        </section>
+        <!-- education -->
+        <section id="skill">
+            <p class="content-title">Skill</p>
+            <article class="experience-content">
+                <div class="skill-content-wrap">
+                    <ul>
+                        <li>
+                            <p><strong>BackEndㅣ</strong> Java, Node.js, JPA, MyBatis, Spring(Boot, Batch)</p>
+                        </li>
+                        <li>
+                            <p><strong>FrontEndㅣ</strong> HTML5, CSS3, JavaScript, React.js</p>
+                        </li>
+                        <li>
+                            <p><strong>Databaseㅣ</strong> MySQL, Oracle</p>
+                        </li>
+                        <li>
+                            <p><strong>Infraㅣ</strong> AWS(EC2, RDS, S3)</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="resources/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <script src="resources/js/progress.js"></script>
+</body>
+
 </html>

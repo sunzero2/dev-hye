@@ -3,13 +3,154 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>생각을 좋아하는 개발자 이혜영입니다.</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <title>Lee HyeYeong</title>
 </head>
 
 <body>
-    <main>
+    <!-- nav -->
+    <nav>
+        <p class="head-title">Developer Hye</p>
+        <a href="#skill" class="head-link">Skill</a>
+        <a href="#other" class="head-link">Other Experience</a>
+        <a href="#work" class="head-link">Work Experience</a>
+        <a href="#introduce" class="head-link">Introduce</a>
+    </nav>
 
+    <main class="content">
+        <!-- profile -->
+        <section id="introduce">
+            <p class="content-title">Introduce</p>
+            <article class="info">
+                <div class="image-box">
+                    <img class="title-image" src="resources/image/title_image.jpg">
+                </div>
+                <div id="profile-content">
+                    <ol style="width: 100%;">
+                        <li>
+                            <p class="about-me">"공유하는 개발자 이혜영입니다"</p>
+                        </li>
+                        <li style="line-height: 26px;">
+                            <p class="about-me-cont" style="margin-top: 3vh;">공부한 것들을 블로그를 통해 공유하고 있습니다.</p>
+                            <p class="about-me-cont">주로 웹과 Computer Science와 관련된 개발 지식을 공부하고 있습니다.</p>
+                            <br>
+                            <p class="about-me-cont">새로운 것을 배우는데 두려움이 없고, 빠르게 습득합니다.</p>
+                            <p class="about-me-cont">Node.js, React.js, JPA 등 기존에 사용해보지 못한 것들을 공부하여 스택 폭을 늘려나가고 있습니다.</p>
+                        </li>
+                    </ol>
+                    <hr class="profile-hr">
+                    <div class="contact">
+                        <div class="contact-image">
+                            <p class="github-image contact-common">Github</p>
+                            <p class="blog-image contact-common">Blog</p>
+                            <p class="blog-image contact-common">Cell</p>
+                            <p class="email-image contact-common">Email</p>
+                        </div>
+                        <div class="contact-link-wrap">
+                            <a class="contact-link" href="https://github.com/sunzero2" target="_blank">
+                                <p>https://github.com/sunzero2</p>
+                            </a>
+                            <a class="contact-link" href="https://blog.naver.com/sun_zero2" target="_blank">
+                                <p>https://blog.naver.com/sun_zero2</p>
+                            </a>
+                            <p class="contact-text">010-5282-9355</p>
+                            <p class="contact-text">sun_zero2@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- work experience -->
+        <section id="work">
+            <p class="content-title">Work Experience</p>
+            <article class="experience-content">
+                <div class="content-wrap">
+                    <u class="experience-title">nGle</u>
+                    <div class="left">
+                        <p class="experience-sub">Web Developer / <br>System Integration</p>
+                        <p style="font-size: 13px; color: grey;">2020.09.01 ~ 재직중</p>
+                    </div>
+                    <div class="right">
+                        <strong>LG</strong>
+                        <ul>
+                            <li><p>LG ThinQ 앱 내 체험하기 개발</p></li>
+                            <li><p>Jenkins CI/CD 자동화</p></li>
+                        </ul>
+                        <br>
+                        <strong>KakaoGames</strong>
+                        <ul>
+                            <li>
+                                <p>다음게임 <a class="work-link" href="http://popcorn.game.daum.net/popcorn/index" target="_blank"><u>쌤쌤마트</u></a> 랭킹 API 개발</p>
+                            </li>
+                            <li><p>백오피스 API 개발</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- other experience -->
+        <section id="other">
+            <p class="content-title">Other Experience</p>
+            <article class="experience-content">
+                <div class="content-wrap other">
+                    <u class="experience-title">국가인적자원개발컨소시엄</u>
+                    <div class="left">
+                        <p style="font-size: 13px; color: grey;">2021.03.09 ~ 2021.03.12</p>
+                    </div>
+                    <div class="right">
+                        <strong>MSA(Micro Service Architecture) 개발자 과정 수료</strong>
+                        <ul>
+                            <li><p>SpringBoot로 MSA 개발</p></li>
+                            <li><p>Docker, Kubernetes</p></li>
+                            <li><p>GitLab CI/CD 배포</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-wrap other">
+                    <u class="experience-title">KH정보교육원</u>
+                    <div class="left">
+                        <p style="font-size: 13px; color: grey;">2019.12.19 ~ 2020.06.24</p>
+                    </div>
+                    <div class="right">
+                        <strong>UI/UX 스마트콘텐츠 융합 응용 SW 엔지니어링 양성 과정 수료</strong>
+                        <ul>
+                            <li><p>FrontEnd(HTML, CSS, JavaScript)</p></li>
+                            <li><p>BackEnd(Java, MyBatis, Spring)</p></li>
+                            <li><p>Database(Oracle)</p></li>
+                            <li><p>Project(<a class="other-link" href="https://github.com/sunzero2/A2BO" target="_blank"><u>EasyVeggy</u></a>, <a class="other-link" href="https://github.com/sunzero2/TEUCHING" target="_blank"><u>Teuching</u></a>)</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- education -->
+        <section id="skill">
+            <p class="content-title">Skill</p>
+            <article class="experience-content">
+                <div class="skill-content-wrap">
+                    <ul>
+                        <li>
+                            <p><strong>BackEndㅣ</strong> Java, Node.js, JPA, MyBatis, Spring(Boot, Batch)</p>
+                        </li>
+                        <li>
+                            <p><strong>FrontEndㅣ</strong> HTML5, CSS3, JavaScript, React.js</p>
+                        </li>
+                        <li>
+                            <p><strong>Databaseㅣ</strong> MySQL, Oracle</p>
+                        </li>
+                        <li>
+                            <p><strong>Infraㅣ</strong> AWS(EC2, RDS, S3)</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
     </main>
+    <script src="resources/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <script src="resources/js/progress.js"></script>
 </body>
 
 </html>
